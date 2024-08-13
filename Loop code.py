@@ -12,7 +12,7 @@ def yes_no(question):
         else:
             print("please enter yes or no")
 
-
+# generate the question
 def generate_question():
     num1 = random.randint(1, 20)
     num2 = random.randint(1, 20)
@@ -29,10 +29,11 @@ def generate_question():
     question = f"What is {num1} {operator} {num2}? "
     return question, answer
 
-#
+# quiz loop
 def take_math_test():
     print("Welcome to my math test.")
     print("You will be asked 6 math questions.")
+
     print("Let's start.\n")
 
     score = 0
